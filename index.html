@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <title>RealEstate ProfitCalc</title>
+</head>
+    <body>
+        <div class="container">
+            <h1>Калькулятор агента по недвижимости</h1>
+            <div class="data">
+                <label for="square">Общая площадь квартиры (кв.м.)</label>
+                <input class="input-value" id="square" type="number" name="square" required><br>
+                <label for="cost-dollar">Стоимость квартиры в USD</label>
+                <input class="input-value" id="cost-dollar" type="number" name="cost-dollar" required><br>
+                <label for="nbrb-dollar">Курс USD НБРБ</label>
+                <input class="input-value" id="nbrb-dollar" type="number" name="cost-dollar" required readonly><br>
+                <button id="calculator-btn" type="submit">Рассчитать</button>
+            </div>
+            <div class="result">
+                <label for="adr-cost">Стоимость 1 кв.м.</label>
+                <p class="result-value" id="adr-cost"></p>
+                <label for="transaction-fee">Процент от сделки (%)</label>
+                <p class="result-value" id="transaction-fee"></p>
+                <label for="agency-fraction">Доля агенства (USD)</label>
+                <p class="result-value" id="agency-fraction"></p>
+<!--                <label for="agent-fraction">Доля агента (USD)</label>-->
+<!--                <p class="result-value" id="agent-fraction"></p>-->
+                <label for="seller-fraction">Доля продавца (USD)</label>
+                <p class="result-value" id="seller-fraction"></p>
+                <div class="explanation">
+                    <p class="explanation__main">Размер базовой величины - <span class="solid">40 белорусских рублей</span><span class="note">*</span></p>
+                    <p class="explanation__note"><span>*</span> - размер базовой величины, действующий для договоров, заключённых до 31.12.2024</p>
+                </div>
+                <div class="new-version-link">
+                    <a class="new-version-link-item" href="#">Новая версия</a>
+                </div>
+            </div>
+        </div>
+    <script src="js/app.js" type="module"></script>
+    </body>
+</html>
