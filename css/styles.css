@@ -93,6 +93,10 @@ button:hover {
     margin-bottom: 15px;
 }
 
+.not-active a {
+    display: none;
+}
+
 .new-version-link-item {
     display: flex;
     justify-content: center;

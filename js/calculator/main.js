@@ -17,7 +17,7 @@ export function App () {
     const sellerFraction = document.getElementById("seller-fraction");
 
     // Базовая величина в белорусских рублях
-    const base = 40;
+    const base = 42;
 
     inputValidator(flatSquare, flatCost);
 
